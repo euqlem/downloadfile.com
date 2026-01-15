@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>https://downloadfile.com</title>
+    <link rel="stylesheet" href="kat.css">
+</head>
+<body>
+
+    <!-- NORMAL PAGE -->
+    <div class="normal-page" id="normalPage">
+        <h1>📄</h1>
+
+        <a href="#" id="startBtn" class="download-link">
+            Download file (12.4 MB)
+        </a>
+    </div>
+
+    <!-- LOADING PAGE -->
+    <div class="loading-page hidden" id="loadingPage">
+        <div class="loader"></div>
+        <p>Downloading…</p>
+    </div>
+
+    <!-- VIRUS MODE -->
+    <div class="virus-page hidden" id="virusPage">
+        <div class="virus-center">
+            <h1>⚠️ SYSTEM ALERT ⚠️</h1>
+            <p>Multiple threats detected on this page.</p>
+            <button id="continueBtn">Fix Issue</button>
+        </div>
+        <div id="alertsContainer"></div>
+    </div>
+
+    <!-- MESSAGE MODE -->
+    <div class="message-page hidden" id="messagePage">
+        <h1>Hey… 😅</h1>
+        <p id="messageText"></p>
+
+        <button id="nextMsgBtn">Next</button>
+        <button id="exitBtn" class="hidden">You can close this anytime</button>
+    </div>
+
+    <!-- 🎵 CONFESSION MUSIC -->
+    <audio id="bgMusic" loop>
+        <source src="those-eyes-2m47-3m37.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
